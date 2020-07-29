@@ -2,37 +2,84 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .addElements input[type="text"] {
+  padding: 5px;
+  margin: 10px;
+  width: 400px;
+  outline: none;
+  height: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .addElements {
+  padding-top:50px;
+  padding-bottom: 50px;
+  border: 1px solid #d6d6d6;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
+  text-align: left;
+  margin-top: 50px;
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px
+}
+
+.main input[type="text"] {
+  display: block;
+  padding: 5px;
+  margin: 10px;
+  width: 400px;
+  outline: none;
+  height: 25px;
+}
+
+.main .row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main .row label {
+  align-self: center;
+  padding: 10px;
+  width: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main #ltiForm {
+  margin-bottom: 50px;
+}
+
+.remove {
+  width: 20px !important;
+  color: red;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  background: #64b1f3;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.blue {
+  background: #64b1f3 !important;
+}
+
+.green {
+  background: #4dd88b !important;
+}
+
+.red {
+  background:#e6cccc !important;
+}
+
+.gray {
+  background: #cecece !important;
+}
+
+.border-red {
+  /* border:1px #e6cccc !important; */
+  border: 2px solid #e6cccc
 }
