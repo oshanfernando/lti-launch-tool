@@ -38,7 +38,12 @@ function App() {
   }
 
   const removeParam = (e) => {
-    setpostparams(postparams.filter((val, i) => i !== parseInt(e.target.id)))
+    const index = parseInt(e.target.id)
+    setpostparams(postparams.filter((val, i) => i !== index))
+    // setpostparams([
+    //   ...postparams.slice(0, index),
+    //   ...postparams.slice(index+1)
+    // ])
   }
 
   const launchTP = (e) => {
@@ -193,7 +198,7 @@ function App() {
 
             <div className="row">
               <label>{param.key}</label>
-              <input onChange={onChangeAddedFields} id={index} name={param.key} type="text" defaultValue={param.value} />
+              <input onChange={onChangeAddedFields} id={index} name={param.key} type="text" value={param.value} />
               <label className="remove" id={index} onClick={removeParam}>x</label>
             </div>
           ))}
